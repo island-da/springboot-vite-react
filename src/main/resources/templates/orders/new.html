@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Orders - new</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script th:inline="javascript">
+        page = { data: {} };
+        page.data.PRODUCTS = [[${products}]];
+    </script>
+    <script type="module" crossorigin src="/static/js/orders/new.js"></script>
+    <link rel="modulepreload" crossorigin href="/static/js/Client.js">
+    <link rel="modulepreload" crossorigin href="/static/js/OrdersAPI.js">
+</head>
+<body>
+    <div id="react-root" />
+</body>
+</html>
